@@ -42,9 +42,21 @@
   background-color: var(--second-color);
   height: 2px;
   width: 30%;
-  margin: 2em 0;
 }
 
 .name {
   color: var(--second-color);
+}
+.h2 {
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+.section {
+  padding: 2em 0em;
+}
+#tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
 }
