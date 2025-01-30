@@ -12,8 +12,15 @@ type ContactProps = {
 export default function Contact({ text, logo, alt, link }: ContactProps) {
   return (
     <div className={styles.contact}>
-      <Image className={styles.logo} alt={alt} src={logo} />
-      <a href={link} className={styles.text}>
+      <a href={link} rel="noopener noreferrer nofollow" target="_blank">
+        <Image className={styles.logo} alt={alt} src={logo} />
+      </a>
+      <a
+        href={link}
+        rel="noopener noreferrer nofollow"
+        target="_blank"
+        className={styles.text}
+      >
         {text}
       </a>{" "}
     </div>
