@@ -29,14 +29,14 @@ export default function Home() {
               Je suis <strong>Développeuse Web</strong>
             </p>
             <p className={styles.text2}>
-              Passionné par le développement web et animé par le désir de faire
-              de ma passion mon métier, j'ai entrepris une reconversion
-              professionnelle. Ayant récemment terminé une formation de
-              Développeur Web et Web Mobile, je suis à la recherche d'une
-              opportunité d'alternance ou d'une première experience
-              professionnelle. Je suis enthousiaste à l'idée de rejoindre une
-              équipe dynamique où je pourrai affiner mes compétences techniques
-              tout en contribuant aux succès de projets d'équipes.
+              {`Passionné par le développement web et animé par le désir de faire 
+  de ma passion mon métier, j'ai entrepris une reconversion 
+  professionnelle. Ayant récemment terminé une formation de 
+  Développeur Web et Web Mobile, je suis à la recherche d'une 
+  opportunité d'alternance ou d'une première expérience 
+  professionnelle. Je suis enthousiaste à l'idée de rejoindre une 
+  équipe dynamique où je pourrai affiner mes compétences techniques 
+  tout en contribuant aux succès de projets d'équipes.`}
             </p>
           </div>
 
