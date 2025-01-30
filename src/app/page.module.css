@@ -60,3 +60,10 @@
   gap: 2em;
   justify-content: center;
 }
+.projects {
+  background-color: #a75ba5;
+  padding: 1em;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 1em 0em;
+}

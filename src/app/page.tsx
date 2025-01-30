@@ -13,6 +13,8 @@ import Git from "./assets/images/git.svg";
 import Figma from "./assets/images/figma.svg";
 import MySql from "./assets/images/mySQL.svg";
 import NextJs from "./assets/images/nextJs.svg";
+import Link from "next/link";
+import Contacts from "./components/contacts/Contacts";
 
 export default function Home() {
   return (
@@ -63,7 +65,14 @@ export default function Home() {
         </section>
         <span className={styles.line}></span>
         <section className={styles.section}>
-          <h2>Me Contacter</h2>
+          <Link href="/projets">
+            <h2 className={styles.projects}>Mes Projets</h2>
+          </Link>
+        </section>
+        <span className={styles.line}></span>
+        <section className={styles.section}>
+          <h2 className={styles.h2}>Me Contacter</h2>
+          <Contacts />
         </section>
       </main>
     </div>
