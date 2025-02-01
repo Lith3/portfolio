@@ -1,0 +1,28 @@
+.smallProject {
+  border: solid 1px white;
+  width: 30%;
+  border-radius: 10px;
+  max-width: 320px;
+  cursor: pointer;
+}
+.content-container {
+  padding: 0.5em;
+}
+.title {
+  padding-bottom: 0.5em;
+  color: var(--second-color);
+}
+.picture {
+  max-width: 95%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.techs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tech-logo {
+  height: 2em;
+  width: auto;
+}
