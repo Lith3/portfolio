@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./SmallProject.module.css";
-import { ProjectProps } from "../project/Project";
+import Project, { ProjectProps } from "../project/Project";
+import { useEffect, useState } from "react";
 
 type SmallProjectProps = {
   project: ProjectProps;
@@ -22,28 +23,57 @@ export default function SmallProject({
     setProjectOrder(newOrder);
   };
 
-  //   console.log(projectOrder);
+  const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsDesktop(window.innerWidth > 850);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  if (isDesktop === null) {
+    return null;
+  }
   return (
-    <div className={styles.smallProject} onClick={changeFocus}>
-      <div className={styles["content-container"]}>
-        <h3 className={styles.title}>{project.name}</h3>
-        <Image
-          className={styles.picture}
-          src={project.picture}
-          alt={project.alt}
-        />
-        <div className={styles.techs}>
-          {" "}
-          {project.techs.map((tech) => (
+    <>
+      {isDesktop ? (
+        <div className={styles.smallProject} onClick={changeFocus}>
+          <div className={styles["content-container"]}>
+            <h3 className={styles.title}>{project.name}</h3>
             <Image
-              className={styles["tech-logo"]}
-              src={tech.techLogo}
-              key={tech.techName}
-              alt={`${tech.techName} logo`}
+              className={styles.picture}
+              src={project.picture}
+              alt={project.alt}
             />
-          ))}
+            <div className={styles.techs}>
+              {" "}
+              {project.techs.map((tech) => (
+                <Image
+                  className={styles["tech-logo"]}
+                  src={tech.techLogo}
+                  key={tech.techName}
+                  alt={`${tech.techName} logo`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      ) : (
+        <Project
+          name={project.name}
+          text={project.text}
+          picture={project.picture}
+          alt={project.alt}
+          repo={project.repo}
+          webSite={project.webSite}
+          techs={project.techs}
+        />
+      )}
+    </>
   );
 }

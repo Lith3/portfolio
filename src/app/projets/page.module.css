@@ -11,6 +11,30 @@
   display: flex;
   gap: 1em;
   width: 70%;
+
   max-width: 900px;
   justify-content: space-between;
+}
+
+.focus {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+@media screen and (max-width: 849px) {
+  .smallProject-container {
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .smallProject-container {
+    width: 90%;
+  }
+  .focus {
+    width: 90%;
+  }
 }

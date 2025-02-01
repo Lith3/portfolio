@@ -29,7 +29,7 @@ export default function Project({
   techs,
 }: ProjectProps) {
   return (
-    <section className={styles.focus}>
+    <div className={styles["project-container"]}>
       <div className={styles.project}>
         <div className={styles["introduction-container"]}>
           <div className={styles.text}>
@@ -87,6 +87,6 @@ export default function Project({
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

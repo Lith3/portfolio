@@ -26,3 +26,12 @@
   height: 2em;
   width: auto;
 }
+
+@media screen and (max-width: 849px) {
+  /* .smallProject {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  } */
+}
