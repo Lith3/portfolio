@@ -1,0 +1,22 @@
+#nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5em;
+  color: var(--second-color);
+  font-weight: bolder;
+  font-size: 1.4em;
+  padding-right: 4em;
+  padding-top: 0.5em;
+}
+#contacts {
+  display: flex;
+  gap: 1.5em;
+}
+.logo {
+  height: 1.4em;
+  width: auto;
+}
+.linkedin {
+  height: 1.6em;
+  width: auto;
+}
