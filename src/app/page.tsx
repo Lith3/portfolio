@@ -26,7 +26,7 @@ export default function Home() {
               Bonjour je suis <span className={styles.name}>Joris Budin</span>
             </h1>
             <p className={styles.text1}>
-              Je suis <strong>Développeuse Web</strong>
+              Je suis <strong>Développeur Web</strong>
             </p>
             <p className={styles.text2}>
               {`Passionné par le développement web et animé par le désir de faire 

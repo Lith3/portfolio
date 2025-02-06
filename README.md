@@ -1,3 +1,5 @@
+A website showcasing my background, projects, and development skills. Built with TypeScript, React, and Next.js, it offers smooth navigation and a modern interface to explore my work and achievements."
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
